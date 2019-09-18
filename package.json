@@ -1,0 +1,40 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass dist/sass/main.scss dist/css/style.css -w",
+    "compile:sass": "node-sass dist/sass/main.scss dist/css/style.comp.css",
+    "concat:css": "concat -o dist/css/style.concat.css dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.concat.css -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.dare.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "concat": "^1.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "axios": "^0.18.0",
+    "flatpickr": "^4.5.7",
+    "node-sass": "^4.11.0",
+    "uniqid": "^5.0.3",
+    "yelp-api": "^1.0.3",
+    "yelp-fusion": "^3.0.0"
+  }
+}
