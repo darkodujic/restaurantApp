@@ -3,8 +3,7 @@ import { elements } from "./base";
 //RENDER RESERVATION UI
 
 export const renderReserve = reserved => {
-
-    const reserve = `
+  const reserve = `
     
     <div class="reserved__card__new" data-itemid=${reserved.id}>
     <img src="${reserved.image}" class="reserved__card__new__img">
@@ -27,15 +26,12 @@ export const renderReserve = reserved => {
     
     `;
 
-    elements.card.insertAdjacentHTML('beforeend', reserve);
-}
+  elements.card.insertAdjacentHTML("beforeend", reserve);
+};
 
 //DELETE RESERVATION FROM UI
 
 export const deleteItem = id => {
-
-    const d = document.querySelector(`[data-itemid="${id}"`);
-    if (d) d.parentElement.removeChild(d);
-}
-
-
+  const d = document.querySelector(`[data-itemid="${id}"`);
+  if (d) d.parentElement.removeChild(d);
+};

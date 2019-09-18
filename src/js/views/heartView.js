@@ -1,7 +1,6 @@
-
 //RENDER SAVE UI
 export const renderLike = like => {
-    const saved = `
+  const saved = `
     
     <div class="item__items saved__item"><a href="#${like.id}">
     <button class="reserved__card__button saved__delete">
@@ -19,14 +18,13 @@ export const renderLike = like => {
 </a></div>
     `;
 
-    document.querySelector('.save').insertAdjacentHTML('afterend', saved);
-}
+  document.querySelector(".save").insertAdjacentHTML("afterend", saved);
+};
 
-//DELETE SAVE 
+//DELETE SAVE
 export const deleteHeartt = id => {
+  const item = document.querySelector(`.saved__item a[href*="${id}"]`)
+    .parentElement;
 
-const item = document.querySelector(`.saved__item a[href*="${id}"]`).parentElement;
-
-if(item) item.parentElement.removeChild(item);
-
+  if (item) item.parentElement.removeChild(item);
 };
