@@ -1,12 +1,12 @@
-import Search from "./js/models/Search";
-import Recipe from "./js/models/Recipe";
-import Reserved from "./js/models/Reserved";
-import * as searchView from "./js/views/searchView";
-import * as recipeView from "./js/views/recipeView";
-import * as reservedView from "./js/views/reservedView";
-import { elements, renderLoader, deleteLoader } from "./js/views/base";
-import Heart from "./js/models/Heart";
-import * as heartView from "./js/views/heartView";
+import Search from "./models/Search";
+import Recipe from "./models/Recipe";
+import Reserved from "./models/Reserved";
+import * as searchView from "./views/searchView";
+import * as recipeView from "./views/recipeView";
+import * as reservedView from "./views/reservedView";
+import { elements, renderLoader, deleteLoader } from "./views/base";
+import Heart from "./models/Heart";
+import * as heartView from "./views/heartView";
 import flatpikr from "flatpickr";
 
 //URADI LIKE BUTTON
