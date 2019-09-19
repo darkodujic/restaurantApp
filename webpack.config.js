@@ -15,7 +15,7 @@ module.exports = {
     plugins: [
         new htmlWebPlugin({
             filename: 'index.html',
-            template: './src/index.html'
+            template: './dist/index.html'
         })
     ],
     node: {
