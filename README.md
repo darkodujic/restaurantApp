@@ -13,11 +13,12 @@
  
  *  HTML5
  *  CSS3 (Grid, Flex, SASS)
- *  REACT
- *  REDUX
+ *  JAVASCRIPT
+ *  JQUERY
  *  GIT
  *  GITHUB
  *  NPM
+ *  WEBPACK (babel..)
  
  
  # Thank you !
