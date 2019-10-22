@@ -1,7 +1,6 @@
 # INSTALATION - RUNNING IT LIVE: 
   After you have downloaded the project, run:
   
-* NPM INIT
 * NPM INSTALL
 * NPM START - NPM RUN START
   
